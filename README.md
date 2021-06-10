@@ -1,2 +1,2 @@
-# Docker-Practice
-Practicing Docker on my previous projects. This repo contaions step by step procedure of dockerizing angular application.
+# Docker-Practice🐳
+Practicing Docker With my previous projects(weather-report-app). This repo contaions step by step procedure of dockerizing angular application.
