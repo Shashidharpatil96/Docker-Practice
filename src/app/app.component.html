@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  Flexi-Target &#9925;
+</mat-toolbar>
+<div class="content">
+  <div class="flex-row">
+    <div class="bg-white">
+    <mat-form-field class="mr">
+      <mat-label class="selectName">Select country</mat-label>
+      <mat-select [formControl]="countryControl">
+        <mat-option *ngFor="let country of countries" [value]="country">
+          {{country.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label class="selectName">Select city</mat-label>
+      <mat-select [formControl]="cityControl">
+        <mat-option *ngFor="let city of cities$ | async" [value]="city">
+          {{city}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    </div>
+  </div>
+
+  <br />
+  <router-outlet></router-outlet>
+</div>

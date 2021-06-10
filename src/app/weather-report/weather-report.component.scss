@@ -1,0 +1,55 @@
+:host {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+mat-card {
+    width: 250px;
+    opacity: 0.8;
+}
+
+mat-card::ng-deep.mat-card-header-text {
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+
+    > div {
+        flex: 50%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    > .outlook {
+        color: black;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    > .temp {
+        background: lightblue;
+        color: black;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big-text {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        height: 80px;
+    }
+}
+
+.gif-bg{
+    background-size: 100%;
+    background-image: url('https://media.giphy.com/media/VseXvvxwowwCc/giphy.gif');
+    height: 250px;
+}

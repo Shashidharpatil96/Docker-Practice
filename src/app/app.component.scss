@@ -1,0 +1,37 @@
+.content {
+    text-align: center;
+    padding-top: 10px;
+    height: 100vh;
+    background-image: url('https://media.giphy.com/media/l5JbspfwZ0yjHjlJ0K/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-white{
+    margin-top: 40px;
+    background-color: dimgray;
+    border: 2px white;
+    padding: 13px;
+    opacity: 0.4;
+}
+
+@media (max-width:410px) {
+    .bg-white {
+        width: 90%;
+    }
+}
+
+.mr {
+    margin-right: 16px;
+}
+
+.selectName{
+    color: white;
+}
